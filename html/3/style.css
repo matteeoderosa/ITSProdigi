@@ -1,0 +1,7 @@
+.pari>td:nth-child(even){ 
+    background-color: #808080;
+}
+
+.dispari>td:nth-child(odd){ 
+    background-color: #808080;
+}

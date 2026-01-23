@@ -1,0 +1,29 @@
+td{
+    text-align: center;
+}
+
+.pari{
+    background-color: aqua;
+    border: 2px solid #000;
+}
+
+.dispari{
+    background-color: yellow;
+    border: 2px solid #000;
+}
+
+.dispariprimo{
+    color:white;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.pariprimo{
+    color:white;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#num50{ 
+    background-color: blueviolet;
+}

@@ -1,0 +1,14 @@
+table, td{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: pink;
+}
+
+td:nth-child(3n+4){
+    border-left-width: 4px;
+}
+
+tr:nth-child(3n+4)>td{
+    border-top-width: 4px;
+}
