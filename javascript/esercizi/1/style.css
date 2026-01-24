@@ -1,0 +1,27 @@
+body{
+    background-color: grey;
+}
+
+div{
+    background-color: yellow;
+}
+
+input[type=number]{
+    outline: 2px solid green;
+}
+
+input{
+    outline: 2px solid red;
+}
+
+input[type=button]:hover{
+    background-color: indigo;
+}
+
+input[type=button]:focus{
+    background-color: brown;
+}
+
+input[type=number]:focus{
+    outline: 2px solid blue;
+}
