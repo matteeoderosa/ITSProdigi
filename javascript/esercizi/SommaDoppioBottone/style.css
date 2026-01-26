@@ -1,0 +1,25 @@
+input[type=number]:focus{
+    outline: 1px solid blue;
+}
+
+input[type=number]{
+    width: 150px;
+    height: 30px;
+}
+
+button{
+    margin-top: 10px;
+    padding: 5px;
+    width: 80px;
+
+    background-color: black;
+    color: white;
+}
+
+#aggiungi:hover{
+    background-color: green;
+}
+
+#svuota:hover{
+    background-color: red;
+}
