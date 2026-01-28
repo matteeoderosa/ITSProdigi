@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over</title>
+
+    <script src="./script.js" defer></script>
+
+</head>
+
+<body>
+    <h1>Nodi del DOM</h1>
+
+    <p>Questo esercizio mostra i nodi del DOM nella console premendo il pulsante</p>
+
+    <img src="./foto/Acqua.jpg" width="100" alt="Prima immagine" onclick="change(0)">
+    <img src="./foto/Arance.jpg" width="100" alt="Seconda immagine" onclick="change(1)">
+    <img src="./foto/Biscotti.jpg" width="100" alt="Terza immagine" onclick="change(2)">
+
+    <form action="#" method="post">
+        <input type="text" placeholder="Cosa cercare...">
+        <input type="button" value="Seleziona">
+    </form>
+
+    <p id="paragraph" onmouseover="write('evento')" onmouseout="write('')">testo default del paragrafo</p>
+
+</body>
+
+</html>
