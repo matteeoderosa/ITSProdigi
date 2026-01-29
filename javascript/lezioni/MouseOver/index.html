@@ -12,20 +12,13 @@
 </head>
 
 <body>
-    <h1>Nodi del DOM</h1>
+    <h1>Attributo Mouse Over</h1>
 
-    <p>Questo esercizio mostra i nodi del DOM nella console premendo il pulsante</p>
+    <p>Questo esercizio cambia il testo del paragrafo passando il mouse sopra l'immagine</p>
 
-    <img src="./foto/Acqua.jpg" width="100" alt="Prima immagine" onclick="change(0)">
-    <img src="./foto/Arance.jpg" width="100" alt="Seconda immagine" onclick="change(1)">
-    <img src="./foto/Biscotti.jpg" width="100" alt="Terza immagine" onclick="change(2)">
+    <img src="./foto/Latte.jpg" width="100" alt="Prima immagine" onmouseover=" changeText(0)" onmouseout=" changeText(1)">
 
-    <form action="#" method="post">
-        <input type="text" placeholder="Cosa cercare...">
-        <input type="button" value="Seleziona">
-    </form>
-
-    <p id="paragraph" onmouseover="write('evento')" onmouseout="write('')">testo default del paragrafo</p>
+    <p id="paragraph">testo default del paragrafo</p>
 
 </body>
 
