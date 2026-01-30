@@ -1,7 +1,7 @@
 function changeText(n){
     const p = document.getElementById("paragraph");
 
-    const a = "mouse sopra l'immagine";
+    const a = "mouse sopra il box";
     const b = "testo default del paragrafo";
 
     switch (n){
