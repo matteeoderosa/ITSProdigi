@@ -12,7 +12,7 @@
 
         label{
             display: block;
-            width: 400px;
+            width: 450px;
             outline: 1px solid black;
             text-align: center;
             background-color: yellow;
@@ -20,13 +20,26 @@
 
         a{
             display: block;
-            width: 400px;
+            width: 450px;
             color: blue;
+            margin-left:5px;
         }
 
         a:hover{
             color: green;
         }
+
+        .languages{
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .lang{
+            width: 450px;
+            outline: 3px solid black;
+        }
+
     </style>
 
 
@@ -35,65 +48,102 @@
 
 <body>
 
-    <label for="html">HTML</label>
-    <br>
-    <nav id="html">
-        <a href="./html/NavigazioneBase/tutto.html">es. 1 : navigazione base tra file html in modo relativo</a>
-        <br>
-        <a href="./html/TabellaMacchine/tabelle.html">es. 2 : primo esercizio sulle tabelle</a>
-        <br>
-        <a href="./html/TabellaMacchine/sottoes/esempio04_tabella.htm">es. 2-bis : classi e id nelle tabelle</a>
-        <br>
-        <a href="./html/TabellaPseudoClassi/scacchiera.html">es. 3 : colorazione a scacchiera di una tabella (nth-child)</a>
-        <br>
-        <a href="./html/TabelleColorate/tavolapitagorica.html">es. 4 : colorazione su più tabelle</a>
-        <br>
-        <a href="./html/ClassiEId/table.html">es. 5 : tabelle un po' più complesse</a>
-        <br>
-        <a href="./html/Sudoku/04_sudoku.html">es. 6 : colorazione tabella in stile sudoku</a>
-        <br>
-        <a href="./html/BasicForm/index.html">es. 7 : form di base</a>
-    </nav>
+    <div class="languages">
 
-    <br><br>
+        <section class="lang">
 
-    <label for="js">JavaScript</label>
-    <br>
-    <nav id="js">
-        <a href="./javascript/lezioni/PrimoEsempio/index.html">es. 1 : js di base (uso del console.log)</a>
-        <br>
-        <a href="./javascript/lezioni/Variabili/index.html">es. 2 : tipi di variabili </a>
-        <br>
-        <a href="./javascript/lezioni/GiocoMonete/index.html">es. 3 : generazione random di codice HTML</a>
-        <br>
-        <a href="./javascript/lezioni/GiornoDellaSettimana/index.html">es. 4 : calcolo giorno della settimana</a>
-        <br>
-        <a href="./javascript/lezioni/GiornoDellAnno/index.html">es. 5 : calcolo giorno dell'anno</a>
-        <br>
-        <a href="./javascript/lezioni/Fibonacci/index.html">es. 6 : calcolo successione di Fibonacci</a>
-        <br>
-        <a href="./javascript/lezioni/Fattoriale/index.html">es. 7 : calcolo del fattoriale</a>        
-        <br>
-        <a href="./javascript/esercizi/Semaforo/index.html">es. 8 : semaforo random</a>
-        <br>
-        <a href="./javascript/esercizi/SommaDoppioBottone/index.html">es. 9 : somma con doppio bottone</a>        
-        <br>
-        <a href="./javascript/lezioni/NodiDOM/index.html">es. 10 : nodi del DOM</a>
-        <br>
-        <a href="./javascript/lezioni/CambioImmagine/index.html">es. 11 : selezione immagine al click</a>
-        <br>
-        <a href="./javascript/lezioni/MouseOver/index.html">es. 12 : attributo mouse over</a>
-        <br>
-        <a href="./javascript/lezioni/RubricaOggetti/index.html">es. 13 : rubrica standard</a>
-        <br>
-        <a href="./javascript/lezioni/RubricaAvanzata/index.html">es. 14 : rubrica avanzata (solo nel codice , stesso funzionamento)</a>
-        <br>
-        <a href="./javascript/lezioni/Intervalli/index.html">es. 15 : timer (conto alla rovescia)</a>
-        <br>
-        <a href="./javascript/esercizi/NewMouseOver/index.html">es. 16 : mouse over tra due immagini</a>
-        <br>
-        <a href="./javascript/esercizi/CreazioneTabella/index.html">es. 17 : tabella avanzata creata dal js</a>
-    </nav>
+            <label for="html">HTML</label>
+            <br>
+            <nav id="html">
+                <a href="./html/NavigazioneBase/tutto.html">es. 1: navigazione base tra file html in modo relativo</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/NavigazioneBase/tutto.html">*source code*</a>
+                <br><br>
+                <a href="./html/TabellaMacchine/tabelle.html">es. 2 : primo esercizio sulle tabelle</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/TabellaMacchine/tabelle.html">*source code*</a>
+                <br><br>
+                <a href="./html/TabellaMacchine/sottoes/esempio04_tabella.htm">es. 2-bis : classi e id nelle tabelle</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/TabellaMacchine/sottoes/esempio04_tabella.htm">*source code*</a>
+                <br><br>
+                <a href="./html/TabellaPseudoClassi/scacchiera.html">es. 3 : colorazione a scacchiera di una tabella (nth-child)</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/TabellaPseudoClassi/scacchiera.html">*source code*</a>
+                <br><br>
+                <a href="./html/TabelleColorate/tavolapitagorica.html">es. 4 : colorazione su più tabelle</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/TabelleColorate/tavolapitagorica.html">*source code*</a>
+                <br><br>
+                <a href="./html/ClassiEId/table.html">es. 5 : tabelle un po' più complesse</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/ClassiEId/table.html">*source code*</a>
+                <br><br>
+                <a href="./html/Sudoku/04_sudoku.html">es. 6 : colorazione tabella in stile sudoku</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/Sudoku/04_sudoku.html">*source code*</a>
+                <br><br>
+                <a href="./html/BasicForm/index.html">es. 7 : form di base</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/BasicForm/index.html">*source code*</a>
+            </nav>
+
+        </section>
+
+        <br><br>
+
+        <section class="lang">
+
+            <label for="js">JavaScript</label>
+            <br>
+            <nav id="js">
+                <a href="./javascript/lezioni/PrimoEsempio/index.html">es. 1 : js di base (uso del console.log)</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/PrimoEsempio/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/lezioni/Variabili/index.html">es. 2 : tipi di variabili </a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/Variabili/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/lezioni/GiocoMonete/index.html">es. 3 : generazione random di codice HTML</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/GiocoMonete/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/lezioni/GiornoDellaSettimana/index.html">es. 4 : calcolo giorno della settimana</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/GiornoDellaSettimana/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/lezioni/GiornoDellAnno/index.html">es. 5 : calcolo giorno dell'anno</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/GiornoDellAnno/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/lezioni/Fibonacci/index.html">es. 6 : calcolo successione di Fibonacci</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/Fibonacci/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/lezioni/Fattoriale/index.html">es. 7 : calcolo del fattoriale</a>        
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/Fattoriale/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/esercizi/Semaforo/index.html">es. 8 : semaforo random</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/esercizi/Semaforo/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/esercizi/SommaDoppioBottone/index.html">es. 9 : somma con doppio bottone</a>    
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/esercizi/SommaDoppioBottone/index.html">*source code*</a>
+                <br><br>    
+                <a href="./javascript/lezioni/NodiDOM/index.html">es. 10 : nodi del DOM</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/NodiDOM/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/lezioni/CambioImmagine/index.html">es. 11 : selezione immagine al click</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/CambioImmagine/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/lezioni/MouseOver/index.html">es. 12 : attributo mouse over</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/MouseOver/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/lezioni/RubricaOggetti/index.html">es. 13 : rubrica standard</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/RubricaOggetti/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/lezioni/RubricaAvanzata/index.html">es. 14 : rubrica avanzata (solo nel codice , stesso funzionamento)</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/RubricaAvanzata/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/lezioni/Intervalli/index.html">es. 15 : timer (conto alla rovescia)</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/Intervalli/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/esercizi/NewMouseOver/index.html">es. 16 : mouse over tra due immagini</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/esercizi/NewMouseOver/index.html">*source code*</a>
+                <br><br>
+                <a href="./javascript/esercizi/CreazioneTabella/index.html">es. 17 : tabella avanzata creata dal js</a>
+                <a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/esercizi/CreazioneTabella/index.html">*source code*</a>
+            </nav>
+
+        </section>
+
+    </div>
 
 </body>
 
