@@ -18,12 +18,14 @@ th{
     color: blue;
 }
 
-input{
+input[type=text]{
     width: 200px;
     height: 30px;
     margin-bottom: 10px;
 }
 
-input[type=submit]{
+#button{
     width: 208px;
+    height: 30px;
+    margin-bottom: 10px;
 }

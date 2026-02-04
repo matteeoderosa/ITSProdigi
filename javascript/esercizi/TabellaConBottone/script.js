@@ -83,7 +83,7 @@ function inserisciRiga()
     if(!campo1 || !campo2 || !campo3)
     {
 
-        if(numErrori >= 4 && numErrori < 6)
+        if(numErrori >= 5 && numErrori < 6)
         {
             errors.textContent = "sei duro eh... sbagliare 5 volte non era così semplice";
         }
