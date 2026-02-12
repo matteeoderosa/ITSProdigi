@@ -60,6 +60,10 @@ mark {
     animation-direction: alternate;
 }
 
+#boxColorato:hover {
+    animation-play-state: paused;
+}
+
 @keyframes animazione {
     0%   {top: 0px; right: 0px; background: red;}
     25%  {top: 100px; right: 0px; background: blue;}
