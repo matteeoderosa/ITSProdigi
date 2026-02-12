@@ -1,5 +1,6 @@
 td{
     text-align: center;
+    padding: 3px;
 }
 
 .pari{
@@ -26,4 +27,14 @@ td{
 
 #num50{ 
     background-color: blueviolet;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
 }

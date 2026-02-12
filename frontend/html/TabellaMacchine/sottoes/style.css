@@ -9,3 +9,13 @@
 .rigadispari{
     background-color: #888888;
 }
+
+caption {
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+td, th {
+    text-align: center;
+    padding: 10px;
+}
