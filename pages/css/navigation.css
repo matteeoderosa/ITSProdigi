@@ -1,8 +1,10 @@
 body {
-    background-color: #ddd;
-
     margin-top: 10px;
     padding: 0;
+}
+
+html, body {
+    font-family: "Orbitron", sans-serif;
 }
 
 div {
@@ -45,4 +47,14 @@ a:hover {
 
 .riga2 {
     background-color: rgb(196, 244, 196);
+}
+
+#casetta, #arrow {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    top: -6px;
+    left: 5px;
 }
