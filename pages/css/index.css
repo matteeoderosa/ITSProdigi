@@ -1,0 +1,50 @@
+html, body {
+    font-family: "Orbitron", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.container {
+    background-color: lightskyblue;
+
+    justify-content: center;
+
+    float: left;
+    width: 48%;
+    transition: width 1s, background-color 1s;
+}
+
+.container:hover {
+    width: 52%;
+    background-color: lightsteelblue;
+}
+
+.container > p {
+    color: #000;
+    font-weight: 550;
+    font-size: 30px;
+    text-align: center;
+
+    padding: 60px;
+}
+
+#casetta {
+    position: fixed;
+
+    top: 5px;
+    left: 5px;
+}
+
+mark {
+    color: #ffa500;
+    background-color: #fff;
+}
+
+#pippo {
+    float: right;
+}

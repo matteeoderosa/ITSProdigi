@@ -1,200 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation</title>
-
-    <style>
-
-        body {
-            background-color: #ddd;
-
-            margin-top: 10px;
-            padding: 0;
-        }
-
-        div {
-            width: 100%;
-        }
-
-        table, th {
-            border: 3px solid #000;
-            border-collapse: collapse;
-        }
-
-        th {
-            background-color: gold;
-            font-size: 35px;
-            padding: 5px;
-        }
-
-        td {
-            border: 2px solid #000;
-            padding: 20px;
-            font-size: 20px;
-        }
-
-        a {
-            color: mediumvioletred;
-        }
-
-        a:hover {
-            color: darkblue;
-        }
-
-        .languages {
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .riga1 {
-            background-color: rgb(208, 208, 237);
-        }
-
-        .riga2 {
-            background-color: rgb(196, 244, 196);
-        }
-
-    </style>
-
+    <title>ITS Prodigi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pages/css/index.css">
 </head>
-
 <body>
+    <a href="https://matteeoderosa.it" id="casetta"><img src="./pages/img/casetta.png" width="50px" height="50px"></a>
 
-    <div class="languages">
+    <div class="title">
+        <h1>Sito di <mark>Matteo De Rosa</mark></h1>
+    </div>
 
-        <section class="lang">
 
-            <table id="htmlTable">
+    <div class="supercontainer">
+        <a href="./pages/navigation.html">
+            <div class="container" id="pluto">
+                <p>vai agli esercizi di frontend</p>
+            </div>
+        </a>
 
-                <tr>
-                    <th colspan="2">HTML</th>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./html/NavigazioneBase/tutto.html">es. 1: navigazione base tra file html in modo relativo</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/NavigazioneBase/tutto.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./html/TabellaMacchine/tabelle.html">es. 2 : primo esercizio sulle tabelle</a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/TabellaMacchine/tabelle.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./html/TabellaMacchine/sottoes/esempio04_tabella.htm">es. 2-bis : classi e id nelle tabelle</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/TabellaMacchine/sottoes/esempio04_tabella.htm">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./html/TabellaPseudoClassi/scacchiera.html">es. 3 : colorazione a scacchiera di una tabella (nth-child)</a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/TabellaPseudoClassi/scacchiera.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./html/TabelleColorate/tavolapitagorica.html">es. 4 : colorazione su più tabelle</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/TabelleColorate/tavolapitagorica.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./html/ClassiEId/table.html">es. 5 : tabelle un po' più complesse</a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/ClassiEId/table.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./html/Sudoku/04_sudoku.html">es. 6 : colorazione tabella in stile sudoku</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/Sudoku/04_sudoku.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./html/BasicForm/index.html">es. 7 : form di base</a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/html/BasicForm/index.html">*source code*</a></td>
-                </tr>
-
-            </table>
-
-        </section>
-
-        <section class="lang">
-
-            <table id="javascript">
-
-                <tr>
-                    <th colspan="2">JAVASCRIPT</th>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./javascript/lezioni/PrimoEsempio/index.html">es. 1 : js di base (uso del console.log)</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/PrimoEsempio/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./javascript/lezioni/Variabili/index.html">es. 2 : tipi di variabili </a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/Variabili/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./javascript/lezioni/GiocoMonete/index.html">es. 3 : generazione random di codice HTML</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/GiocoMonete/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./javascript/lezioni/GiornoDellaSettimana/index.html">es. 4 : calcolo giorno della settimana</a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/GiornoDellaSettimana/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./javascript/lezioni/GiornoDellAnno/index.html">es. 5 : calcolo giorno dell'anno</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/GiornoDellAnno/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./javascript/lezioni/Fibonacci/index.html">es. 6 : calcolo successione di Fibonacci</a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/Fibonacci/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./javascript/lezioni/Fattoriale/index.html">es. 7 : calcolo del fattoriale</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/Fattoriale/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./javascript/esercizi/Semaforo/index.html">es. 8 : semaforo random</a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/esercizi/Semaforo/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./javascript/esercizi/SommaDoppioBottone/index.html">es. 9 : somma con doppio bottone</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/esercizi/SommaDoppioBottone/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./javascript/lezioni/NodiDOM/index.html">es. 10 : nodi del DOM</a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/NodiDOM/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./javascript/lezioni/CambioImmagine/index.html">es. 11 : selezione immagine al click</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/CambioImmagine/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./javascript/lezioni/MouseOver/index.html">es. 12 : attributo mouse over</a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/MouseOver/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./javascript/lezioni/RubricaOggetti/index.html">es. 13 : rubrica standard</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/RubricaOggetti/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./javascript/esercizi/RubricaAvanzata/index.html">es. 14 : rubrica avanzata (solo nel codice , stesso funzionamento)</a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/esercizi/RubricaAvanzata/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./javascript/lezioni/Intervalli/index.html">es. 15 : timer (conto alla rovescia)</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/lezioni/Intervalli/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./javascript/esercizi/NewMouseOver/index.html">es. 16 : mouse over tra due immagini</a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/esercizi/NewMouseOver/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga1"><a href="./javascript/esercizi/CreazioneTabella/index.html">es. 17 : tabella avanzata creata dal js</a></td>
-                    <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/esercizi/CreazioneTabella/index.html">*source code*</a></td>
-                </tr>
-                <tr>
-                    <td class="riga2"><a href="./javascript/esercizi/TabellaConBottone/index.html">es. 18 : tabella avanzata con easter egg</a></td>
-                    <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/javascript/esercizi/TabellaConBottone/index.html">*source code*</a></td>
-                </tr>
-
-            </table>
-
-        </section>
-
+        <a href="#">
+            <div class="container" id="pippo">
+                <p>vai da nessuna parte (per ora)</p>
+            </div>
+        </a>
     </div>
 
 </body>
-
 </html>
