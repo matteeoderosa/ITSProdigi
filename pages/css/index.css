@@ -56,10 +56,8 @@ mark {
     height: 30px;
     background: red;
     position: relative;
-}
-
-#boxColorato:hover {
     animation: animazione 5s infinite;
+    animation-direction: alternate;
 }
 
 @keyframes animazione {
