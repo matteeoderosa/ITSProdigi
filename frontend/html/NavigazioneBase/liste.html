@@ -7,12 +7,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../pages/css/fonts.css">
     <link rel="icon" href="../../../pages/img/MLogo.ico" type="image/x-icon">
+
+    <style>
+
+        ol,ul {
+            margin-bottom: 45px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #listaD>li , .container li {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .special {
+            justify-content: center;
+            font-size: 19px;
+        }
+
+    </style>
+
 </head>
 <body>
+
+    <h1>Liste numerate e ordinate</h1>
+
 <!-- di default crea la lista numerata 
     
 -->
-    <ol>
+
+<div>
+    <ol id="listaD">
         <li>Udinese</li>
         <li>Pisa</li>
         <li>Roma</li>
@@ -24,14 +58,18 @@
     
 -->
     <ol>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
+        <li><img src="./images/pluto.jpg" width="50" height="50"></li>
+        <li><img src="./images/pluto.jpg" width="50" height="50"></li>
+        <li><img src="./images/pluto.jpg" width="50" height="50"></li>
     </ol>
+
+</div>
 
 <!-- ordinata con lettere maiuscole
     
 -->
+
+<div class="container">
     <ol type="A">
         <li>oggetto 1</li>
         <li>oggetto 2</li>
@@ -49,9 +87,12 @@
         <li>oggetto 4</li>
     </ol>
 
+</div>
 <!-- lista non ordinata (con pallino)
     
 -->
+
+<div class="container">
     <ul>
         <li>Udinese</li>
         <li>Pisa</li>
@@ -70,24 +111,21 @@
             </ul>
         </li>
     </ul>
-
+</div>
 <!-- "definition list" ; "definition term" ; "definition description" 
     
 -->
+
+<div class="special">    
     <dl> 
         <dt>termine</dt>
         <dd>sua definizione</dd>
-    </dl>
-
-<!--
-    
--->
-    <dl>
         <dt>HTTP</dt>
         <dd>Hypertext Transfer Protocol</dd>
         <dt>FTP</dt>
         <dd>File Transfer Protocol</dd>
     </dl>
+</div>
 
 
 </body>

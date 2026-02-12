@@ -12,10 +12,13 @@ h1{
 
 body{ 
     background-color: powderblue;
+
+    font-size: 25px;
 }
 
 h2{ 
     background: linear-gradient(#ffa500, pink);
+    text-align: center;
 }
 
 #venditeauto{ 
@@ -34,4 +37,14 @@ h2{
 
 td:nth-child(odd){ 
     background-color: red;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+th,td {
+    padding: 10px;
+    text-align: center;
 }
