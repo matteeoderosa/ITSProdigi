@@ -57,6 +57,7 @@ mark {
     background: red;
     position: relative;
     animation: animazione 5s infinite;
+    animation-direction: alternate;
 }
 
 @keyframes animazione {
