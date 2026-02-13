@@ -29,11 +29,11 @@ td {
 }
 
 a {
-    color: mediumvioletred;
+    color: #850F57;
 }
 
 a:hover {
-    color: darkblue;
+    color: #00008b;
 }
 
 .languages {
@@ -42,7 +42,7 @@ a:hover {
 }
 
 .riga1 {
-    background-color: rgb(208, 208, 237);
+    background-color: #DEDEF2;
 }
 
 .riga2 {
