@@ -27,3 +27,13 @@ input{
 input[type=submit]{
     width: 208px;
 }
+
+h1 {
+    font-size: 27px;
+}
+
+p {
+    font-size: 21px;
+    display: inline;
+    cursor: pointer;
+}

@@ -1,13 +1,3 @@
-const p = document.getElementById("paragraph");
-p.addEventListener("click", cliccato);
-
-function cliccato()
-{
-    p.classList.toggle("cliccato");
-}
-
-/* -------------------------------------------------------- */
-
 const btn = document.getElementById("button");
 btn.addEventListener("click", gestioneTabella);
 
