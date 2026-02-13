@@ -1,27 +1,48 @@
-body{
+body {
     background-color: grey;
+    font-size: 40px;
+
 }
 
-div{
-    background-color: yellow;
-}
-
-input[type=number]{
+input[type=number] {
     outline: 2px solid green;
 }
 
-input{
+input {
     outline: 2px solid red;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
 }
 
-input[type=button]:hover{
+input[type=button]:hover {
     background-color: indigo;
 }
 
-input[type=button]:focus{
+input[type=button]:focus {
     background-color: brown;
 }
 
-input[type=number]:focus{
+input[type=number]:focus {
     outline: 2px solid blue;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 200px;
+
+    margin-top: 400px;
+}
+
+.container .subcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    padding: 50px;
 }
