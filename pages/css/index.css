@@ -72,9 +72,8 @@ footer {
     justify-content: center;
     align-items: center;
 
-    position: absolute;
+    position: relative;
     bottom: 0;
-    left: 0;
 
     font-size: 17px;
 }
@@ -151,31 +150,31 @@ footer {
 @keyframes animazioneTel {
     0% {
         top: 0px;
-        right: 0px;
+        right: 5px;
         background: red;
     }
 
     25% {
         top: 15px;
-        right: 0px;
+        right: 5px;
         background: blue;
     }
 
     50% {
         top: 15px;
-        right: 15px;
+        right: 20px;
         background: yellow;
     }
 
     75% {
         top: 0px;
-        right: 15px;
+        right: 20px;
         background: green;
     }
 
     100% {
         top: 0px;
-        right: 0px;
+        right: 5px;
         background: red;
     }
 }
@@ -252,4 +251,13 @@ footer {
         width: 100%;
         background-color: lightskyblue;
     }
+
+    footer {
+        height: 35px;
+
+        font-size: 11px;
+
+        position: absolute;
+    }
+
 }
