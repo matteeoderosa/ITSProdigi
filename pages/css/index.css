@@ -1,18 +1,21 @@
 h1 {
     text-align: center;
     font-size: 70px;
-    margin-top: 0;
     margin-bottom: 50px;
 }
 
 .container {
     background-color: lightskyblue;
 
+    display: flex;
     justify-content: center;
+    align-items: center;
 
     float: left;
+
+    height: 250px;
     width: 48%;
-    transition: width 1s, background-color 1s;
+    transition: all 1s ease-in-out;
 }
 
 .container:hover {
@@ -20,7 +23,7 @@ h1 {
     background-color: lightsteelblue;
 }
 
-.container>p {
+.container > p {
     color: #000;
     font-weight: 550;
     font-size: 30px;
@@ -37,7 +40,7 @@ h1 {
 }
 
 mark {
-    color: #A86800;
+    color: #a86800;
     background-color: #fff;
 }
 
@@ -52,12 +55,33 @@ mark {
     height: 30px;
     background: red;
     position: relative;
-    animation: animazione 5s infinite;
+    animation: animazione 5s infinite ease-in-out;
     animation-direction: alternate;
 }
 
 #boxColorato:hover {
     animation-play-state: paused;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    font-size: 17px;
+}
+
+#casettaImg {
+    width: 50px;
+    height: 50px;
 }
 
 @keyframes animazione {
@@ -92,18 +116,140 @@ mark {
     }
 }
 
-footer {
-    width: 100%;
-    height: 60px;
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@keyframes animazione2 {
+    0% {
+        top: 0px;
+        right: 0px;
+        background: red;
+    }
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    25% {
+        top: 50px;
+        right: 0px;
+        background: blue;
+    }
 
-    font-size: 17px;
+    50% {
+        top: 50px;
+        right: 50px;
+        background: yellow;
+    }
+
+    75% {
+        top: 0px;
+        right: 50px;
+        background: green;
+    }
+
+    100% {
+        top: 0px;
+        right: 0px;
+        background: red;
+    }
+}
+
+@keyframes animazioneTel {
+    0% {
+        top: 0px;
+        right: 0px;
+        background: red;
+    }
+
+    25% {
+        top: 15px;
+        right: 0px;
+        background: blue;
+    }
+
+    50% {
+        top: 15px;
+        right: 15px;
+        background: yellow;
+    }
+
+    75% {
+        top: 0px;
+        right: 15px;
+        background: green;
+    }
+
+    100% {
+        top: 0px;
+        right: 0px;
+        background: red;
+    }
+}
+
+@media screen and (max-width: 1136px) {
+    h1 {
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
+    #boxColorato {
+        animation: animazione2 5s infinite ease-in-out;
+        animation-direction: alternate;
+    }
+}
+
+@media screen and (max-width: 1312px) {
+    .container > p {
+        font-size: 28px;
+    }
+    div.container {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1242px) {
+    .container > p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 428px), screen and (max-height: 926px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-size: 28px;
+    }
+
+    .container > p {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .container {
+        margin-bottom: 20px;
+    }
+
+    #casettaImg {
+        width: 22px;
+        height: 22px;
+    }
+
+    #boxColorato {
+        top: 0;
+        right: 0;
+
+        width: 10px;
+        height: 10px;
+
+        animation: animazioneTel 5s infinite ease-in-out alternate;
+    }
+
+    div.container {
+        width: 100%;
+        height: 50px;
+        transition: none;
+    }
+
+    .container:hover {
+        width: 100%;
+        background-color: lightskyblue;
+    }
 }
