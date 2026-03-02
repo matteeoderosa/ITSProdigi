@@ -266,3 +266,46 @@ footer {
     }
 
 }
+
+@media screen and (max-width: 926px) and (orientation: landscape) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        margin-top: 15px;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .container > p {
+        font-size: 14px;
+        padding: 0;
+    }
+    .container {
+        margin-bottom: 10px;
+        height: 80px;
+    }
+    #casettaImg {
+        width: 22px;
+        height: 22px;
+    }
+    #boxColorato {
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        animation: animazioneTel 5s infinite ease-in-out alternate;
+    }
+    div.container {
+        width: 48%;
+        height: 80px;
+    }
+    .container:hover {
+        width: 52%;
+    }
+    footer {
+        height: 35px;
+        font-size: 11px;
+        position: absolute;
+    }
+}
