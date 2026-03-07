@@ -211,7 +211,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 500px) {
     body {
         margin: 0;
         padding: 0;
