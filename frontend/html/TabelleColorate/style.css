@@ -37,4 +37,15 @@ h1 {
 div {
     display: flex;
     justify-content: center;
+    overflow-x: auto;
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    td {
+        font-size: 13px;
+        padding: 2px;
+    }
 }

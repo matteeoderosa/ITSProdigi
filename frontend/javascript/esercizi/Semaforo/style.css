@@ -22,3 +22,18 @@ h1 {
     font-size: 45px;
     text-align: center;
 }
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 22px;
+        padding: 6px;
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}

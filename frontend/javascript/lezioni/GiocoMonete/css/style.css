@@ -12,3 +12,9 @@ input[type=button]{
 input[type=button]:hover{
     background-color: green;
 }
+@media screen and (max-width: 400px) {
+    input[type=number] {
+        width: 100%;
+        max-width: 220px;
+    }
+}

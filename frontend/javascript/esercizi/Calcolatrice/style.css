@@ -60,3 +60,22 @@ body {
 .buttons button:hover {
     background-color: #303030;
 }
+
+@media screen and (max-width: 400px) {
+    html, body {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+
+    .calculator {
+        width: 90vw;
+        max-width: 320px;
+        padding: 15px;
+    }
+
+    .buttons button {
+        height: 40px;
+        font-size: 14px;
+    }
+}

@@ -19,3 +19,9 @@ td, th {
     text-align: center;
     padding: 10px;
 }
+@media screen and (max-width: 600px) {
+    td, th {
+        padding: 5px;
+        font-size: 14px;
+    }
+}

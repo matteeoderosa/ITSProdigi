@@ -6,6 +6,9 @@ td, th{
 table{
     border-collapse: collapse;
     text-align: center;
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
 }
 
 div {

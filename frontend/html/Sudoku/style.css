@@ -22,9 +22,20 @@ h1 {
 div {
     display: flex;
     justify-content: center;
+    overflow-x: auto;
 }
 
 td {
     font-size: 30px;
     padding: 5px;
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    td {
+        font-size: 18px;
+        padding: 3px;
+    }
 }
