@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./pages/css/fonts.css">
     <link rel="stylesheet" href="./pages/css/index.css">
+    <link rel="stylesheet" href="./pages/css/nav-icons.css">
 
     <link rel="icon" href="./pages/img/img/favicon.ico" />
     <link rel="icon" href="./pages/img/img/favicon.svg" type="image/svg+xml" />
@@ -15,8 +16,9 @@
     <!-- <link rel="icon" href="./pages/img/MLogo.ico" type="image/x-icon"> -->
 </head>
 <body>
-    <nav>
-        <a href="https://matteeoderosa.it" id="casetta" aria-label="torna alla home page"><img id="casettaImg" src="./pages/img/casetta.png" alt="logo home page"></a>
+    <nav class="nav-icons">
+        <a href="https://matteeoderosa.it" aria-label="torna alla home page"><img src="./pages/img/casetta.png" alt="logo home page"></a>
+        <a href="./pages/navigation.html" aria-label="torna alla pagina di navigazione"><img src="./pages/img/arrow.png" alt="logo freccia per tornare alla pagina di navigazione"></a>
     </nav>
 
     <main>
@@ -31,14 +33,26 @@
 
         <div class="supercontainer">
             <a href="./pages/navigation.html">
-                <div class="container" id="pluto">
-                    <p>vai agli esercizi di frontend</p>
+                <div class="container" id="esercizi-frontend">
+                    <p>esercizi di frontend puro</p>
                 </div>
             </a>
 
-            <a href="#">
-                <div class="container" id="pippo">
-                    <p>vai da nessuna parte (per ora)</p>
+            <a href="https://derteo.github.io">
+                <div class="container" id="derteoGithub">
+                    <p>visita il mio nuovo sito personale</p>
+                </div>
+            </a>
+
+            <a href="https://todo.matteeoderosa.it">
+                <div class="container" id="sitoTodo">
+                    <p>vai al sito della To-Do List</p>
+                </div>
+            </a>
+
+            <a href="https://tabella.matteeoderosa.it">
+                <div class="container" id="sitoTabella">
+                    <p>vai al sito users-posts-comments</p>
                 </div>
             </a>
         </div>

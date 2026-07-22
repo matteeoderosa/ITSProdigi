@@ -9,6 +9,23 @@ h1 {
     margin-bottom: 50px;
 }
 
+.supercontainer {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.supercontainer > a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     background-color: lightskyblue;
 
@@ -16,20 +33,15 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 250px;
-    width: 48%;
-    float: left;
+    width: 100%;
     overflow: hidden;
 
-    transition: all 1s ease-in-out;
-}
-
-#pippo {
-    float: right;
+    transition: background-color 1s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .container:hover {
-    width: 52%;
     background-color: lightsteelblue;
+    transform: scale(1.03);
 }
 
 .container > p {
@@ -39,13 +51,6 @@ h1 {
     text-align: center;
 
     padding: 60px;
-}
-
-#casetta {
-    position: fixed;
-
-    top: 5px;
-    left: 5px;
 }
 
 mark {
@@ -82,11 +87,6 @@ footer {
     bottom: 0;
 
     font-size: 17px;
-}
-
-#casettaImg {
-    width: 50px;
-    height: 50px;
 }
 
 @keyframes animazione {
@@ -227,13 +227,10 @@ footer {
         padding: 0;
     }
 
-    .container {
-        margin-bottom: 20px;
-    }
-
-    #casettaImg {
-        width: 22px;
-        height: 22px;
+    .supercontainer {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 16px;
     }
 
     #boxColorato {
@@ -247,14 +244,13 @@ footer {
     }
 
     div.container {
-        width: 100%;
         height: 50px;
         transition: none;
     }
 
     .container:hover {
-        width: 100%;
         background-color: lightskyblue;
+        transform: none;
     }
 
     footer {
@@ -282,12 +278,12 @@ footer {
         padding: 0;
     }
     .container {
-        margin-bottom: 10px;
         height: 80px;
     }
-    #casettaImg {
-        width: 22px;
-        height: 22px;
+    .supercontainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 16px;
     }
     #boxColorato {
         top: 0;
@@ -296,12 +292,8 @@ footer {
         height: 10px;
         animation: animazioneTel 5s infinite ease-in-out alternate;
     }
-    div.container {
-        width: 48%;
-        height: 80px;
-    }
     .container:hover {
-        width: 52%;
+        transform: scale(1.03);
     }
     footer {
         height: 35px;
