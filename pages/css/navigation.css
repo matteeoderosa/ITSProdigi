@@ -38,7 +38,18 @@ a:hover {
 
 .languages {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 30px;
+}
+
+.lang {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    max-width: 100%;
 }
 
 .riga1 {
@@ -49,12 +60,33 @@ a:hover {
     background-color: rgb(196, 244, 196);
 }
 
-#casetta, #arrow {
-    position: relative;
+@media screen and (max-width: 900px) {
+    th {
+        font-size: 26px;
+    }
 
-    margin: 0;
-    padding: 0;
+    td {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
 
-    top: -6px;
-    left: 5px;
+@media screen and (max-width: 600px) {
+    body {
+        margin-top: 6px;
+    }
+
+    th {
+        font-size: 20px;
+        padding: 4px;
+    }
+
+    td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .languages {
+        gap: 16px;
+    }
 }

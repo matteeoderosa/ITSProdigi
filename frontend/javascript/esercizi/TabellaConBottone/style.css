@@ -6,6 +6,12 @@ table, td, th{
     padding: 10px;
 }
 
+table {
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+}
+
 th{
     font-size: 25px;
 }
@@ -44,4 +50,18 @@ div {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+@media screen and (max-width: 600px) {
+    th {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type=text], #button {
+        width: 90%;
+        max-width: 208px;
+    }
 }

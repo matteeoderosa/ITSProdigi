@@ -6,6 +6,12 @@ table, td, th{
     padding: 10px;
 }
 
+table {
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+}
+
 th{
     font-size: 25px;
 }
@@ -36,4 +42,13 @@ p {
     font-size: 21px;
     display: inline;
     cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    th {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
 }
