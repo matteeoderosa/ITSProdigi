@@ -1,145 +1,221 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="pagina di navigazione tra i vari esercizi pubblicati" />
-        <title>Navigation</title>
-        <link rel="stylesheet" href="./css/navigation.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="./css/fonts.css" />
-        <link rel="stylesheet" href="./css/nav-icons.css" />
-        <link rel="icon" href="./img/MLogo.ico" type="image/x-icon" />
-    </head>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi di frontend · Matteo De Rosa</title>
+    <meta name="description" content="26 esercizi di frontend puro di Matteo De Rosa: HTML, CSS e JavaScript senza librerie, con il codice sorgente.">
+    <link rel="canonical" href="https://matteeoderosa.it/pages/navigation.html">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#151311" media="(prefers-color-scheme: dark)">
 
-    <body>
-        <nav class="nav-icons">
-            <a href="../index.html" aria-label="torna alla home page"><img src="./img/casetta.png" alt="logo home page" /></a>
-            <a href="./navigation.html" aria-label="torna alla pagina di navigazione"><img src="./img/arrow.png" alt="logo freccia per tornare alla pagina di navigazione" /></a>
-        </nav>
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="Matteo De Rosa">
+    <meta property="og:title" content="Esercizi di frontend · Matteo De Rosa">
+    <meta property="og:description" content="26 esercizi di frontend puro di Matteo De Rosa: HTML, CSS e JavaScript senza librerie, con il codice sorgente.">
+    <meta property="og:url" content="https://matteeoderosa.it/pages/navigation.html">
+    <meta property="og:image" content="https://matteeoderosa.it/pages/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Matteo De Rosa, progetti ed esercizi full stack">
+    <meta name="twitter:card" content="summary_large_image">
 
-        <main>
-            <div class="languages">
-                <section class="lang">
-                    <table id="htmlTable">
-                        <tr>
-                            <th colspan="2">HTML</th>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/html/NavigazioneBase/tutto.html">es. 1: navigazione base tra file html in modo relativo</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/NavigazioneBase/tutto.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/html/TabellaMacchine/tabelle.html">es. 2 : primo esercizio sulle tabelle</a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/TabellaMacchine/tabelle.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/html/TabellaMacchine/sottoes/esempio04_tabella.htm">es. 2-bis : classi e id nelle tabelle</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/TabellaMacchine/sottoes/esempio04_tabella.htm">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/html/TabellaPseudoClassi/scacchiera.html">es. 3 : colorazione a scacchiera di una tabella (nth-child)</a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/TabellaPseudoClassi/scacchiera.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/html/TabelleColorate/tavolapitagorica.html">es. 4 : colorazione su più tabelle</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/TabelleColorate/tavolapitagorica.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/html/ClassiEId/table.html">es. 5 : tabelle un po' più complesse</a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/ClassiEId/table.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/html/Sudoku/04_sudoku.html">es. 6 : colorazione tabella in stile sudoku</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/Sudoku/04_sudoku.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/html/BasicForm/index.html">es. 7 : form di base</a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/BasicForm/index.html">*source code*</a></td>
-                        </tr>
-                    </table>
-                </section>
+    <link rel="icon" href="../favicon.ico" sizes="48x48">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 
-                <section class="lang">
-                    <table id="javascript">
-                        <tr>
-                            <th colspan="2">JAVASCRIPT</th>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/javascript/lezioni/PrimoEsempio/index.html">es. 1 : js di base (uso del console.log)</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/PrimoEsempio/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/javascript/lezioni/Variabili/index.html">es. 2 : tipi di variabili </a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/Variabili/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/javascript/lezioni/GiocoMonete/index.html">es. 3 : generazione random di codice HTML</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/GiocoMonete/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/javascript/lezioni/GiornoDellaSettimana/index.html">es. 4 : calcolo giorno della settimana</a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/GiornoDellaSettimana/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/javascript/lezioni/GiornoDellAnno/index.html">es. 5 : calcolo giorno dell'anno</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/GiornoDellAnno/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/javascript/lezioni/Fibonacci/index.html">es. 6 : calcolo successione di Fibonacci</a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/Fibonacci/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/javascript/lezioni/Fattoriale/index.html">es. 7 : calcolo del fattoriale</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/Fattoriale/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/javascript/esercizi/Semaforo/index.html">es. 8 : semaforo random</a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/esercizi/Semaforo/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/javascript/esercizi/SommaDoppioBottone/index.html">es. 9 : somma con doppio bottone</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/esercizi/SommaDoppioBottone/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/javascript/lezioni/NodiDOM/index.html">es. 10 : nodi del DOM</a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/NodiDOM/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/javascript/lezioni/CambioImmagine/index.html">es. 11 : selezione immagine al click</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/CambioImmagine/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/javascript/lezioni/MouseOver/index.html">es. 12 : attributo mouse over</a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/MouseOver/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/javascript/lezioni/RubricaOggetti/index.html">es. 13 : rubrica standard</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/RubricaOggetti/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/javascript/esercizi/RubricaAvanzata/index.html">es. 14 : rubrica avanzata (solo nel codice , stesso funzionamento)</a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/esercizi/RubricaAvanzata/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/javascript/lezioni/Intervalli/index.html">es. 15 : timer (conto alla rovescia)</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/Intervalli/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/javascript/esercizi/NewMouseOver/index.html">es. 16 : mouse over tra due immagini</a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/esercizi/NewMouseOver/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga1"><a href="../frontend/javascript/esercizi/CreazioneTabella/index.html">es. 17 : tabella avanzata creata dal js</a></td>
-                            <td class="riga1"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/esercizi/CreazioneTabella/index.html">*source code*</a></td>
-                        </tr>
-                        <tr>
-                            <td class="riga2"><a href="../frontend/javascript/esercizi/TabellaConBottone/index.html">es. 18 : tabella avanzata con easter egg</a></td>
-                            <td class="riga2"><a href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/esercizi/TabellaConBottone/index.html">*source code*</a></td>
-                        </tr>
-                    </table>
-                </section>
-            </div>
-        </main>
-    </body>
+    <link rel="preload" href="fonts/instrument-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/site.css">
+    <script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/filter.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="../">
+                <img src="../favicon.svg" alt="" width="34" height="34">
+                <span>Matteo De Rosa</span>
+            </a>
+            <nav class="main-nav" aria-label="Principale">
+                <ul>
+                    <li><a href="../#progetti">Progetti</a></li>
+                    <li><a href="navigation.html" aria-current="page">Esercizi</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Tema scuro">
+                <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main id="contenuto">
+        <div class="wrap">
+            <section class="page-head" aria-labelledby="titolo">
+                <h1 id="titolo">Esercizi</h1>
+                <p class="lead">Esercizi di frontend puro: HTML, CSS e JavaScript senza librerie. Ognuno ha il suo codice sorgente su GitHub.</p>
+                <div class="filter">
+                    <label for="filtro">Filtra gli esercizi</label>
+                    <input id="filtro" type="search" placeholder="Per esempio: tabella, rubrica, timer" autocomplete="off">
+                    <p class="filter-status" id="filtro-esito" role="status" aria-live="polite"></p>
+                </div>
+            </section>
+
+            <section class="exercise-group" aria-labelledby="titolo-html">
+                <h2 id="titolo-html">HTML <span class="group-count">8 esercizi</span></h2>
+                <ul class="exercise-list">
+                    <li class="exercise" data-search="es. 1 Navigazione base tra file HTML in modo relativo">
+                        <span class="ex-num">es. 1</span>
+                        <a class="ex-title" href="../frontend/html/NavigazioneBase/tutto.html">Navigazione base tra file HTML in modo relativo</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/NavigazioneBase/tutto.html" aria-label="Codice sorgente su GitHub: Navigazione base tra file HTML in modo relativo">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 2 Primo esercizio sulle tabelle">
+                        <span class="ex-num">es. 2</span>
+                        <a class="ex-title" href="../frontend/html/TabellaMacchine/tabelle.html">Primo esercizio sulle tabelle</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/TabellaMacchine/tabelle.html" aria-label="Codice sorgente su GitHub: Primo esercizio sulle tabelle">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 2-bis Classi e id nelle tabelle">
+                        <span class="ex-num">es. 2-bis</span>
+                        <a class="ex-title" href="../frontend/html/TabellaMacchine/sottoes/esempio04_tabella.htm">Classi e id nelle tabelle</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/TabellaMacchine/sottoes/esempio04_tabella.htm" aria-label="Codice sorgente su GitHub: Classi e id nelle tabelle">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 3 Colorazione a scacchiera di una tabella (nth-child)">
+                        <span class="ex-num">es. 3</span>
+                        <a class="ex-title" href="../frontend/html/TabellaPseudoClassi/scacchiera.html">Colorazione a scacchiera di una tabella (nth-child)</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/TabellaPseudoClassi/scacchiera.html" aria-label="Codice sorgente su GitHub: Colorazione a scacchiera di una tabella (nth-child)">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 4 Colorazione su più tabelle">
+                        <span class="ex-num">es. 4</span>
+                        <a class="ex-title" href="../frontend/html/TabelleColorate/tavolapitagorica.html">Colorazione su più tabelle</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/TabelleColorate/tavolapitagorica.html" aria-label="Codice sorgente su GitHub: Colorazione su più tabelle">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 5 Tabelle un po&#x27; più complesse">
+                        <span class="ex-num">es. 5</span>
+                        <a class="ex-title" href="../frontend/html/ClassiEId/table.html">Tabelle un po&#x27; più complesse</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/ClassiEId/table.html" aria-label="Codice sorgente su GitHub: Tabelle un po&#x27; più complesse">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 6 Colorazione tabella in stile sudoku">
+                        <span class="ex-num">es. 6</span>
+                        <a class="ex-title" href="../frontend/html/Sudoku/04_sudoku.html">Colorazione tabella in stile sudoku</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/Sudoku/04_sudoku.html" aria-label="Codice sorgente su GitHub: Colorazione tabella in stile sudoku">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 7 Form di base">
+                        <span class="ex-num">es. 7</span>
+                        <a class="ex-title" href="../frontend/html/BasicForm/index.html">Form di base</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/html/BasicForm/index.html" aria-label="Codice sorgente su GitHub: Form di base">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="exercise-group" aria-labelledby="titolo-js">
+                <h2 id="titolo-js">JavaScript <span class="group-count">18 esercizi</span></h2>
+                <ul class="exercise-list">
+                    <li class="exercise" data-search="es. 1 JavaScript di base (uso del console.log)">
+                        <span class="ex-num">es. 1</span>
+                        <a class="ex-title" href="../frontend/javascript/lezioni/PrimoEsempio/index.html">JavaScript di base (uso del console.log)</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/PrimoEsempio/index.html" aria-label="Codice sorgente su GitHub: JavaScript di base (uso del console.log)">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 2 Tipi di variabili">
+                        <span class="ex-num">es. 2</span>
+                        <a class="ex-title" href="../frontend/javascript/lezioni/Variabili/index.html">Tipi di variabili</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/Variabili/index.html" aria-label="Codice sorgente su GitHub: Tipi di variabili">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 3 Generazione random di codice HTML">
+                        <span class="ex-num">es. 3</span>
+                        <a class="ex-title" href="../frontend/javascript/lezioni/GiocoMonete/index.html">Generazione random di codice HTML</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/GiocoMonete/index.html" aria-label="Codice sorgente su GitHub: Generazione random di codice HTML">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 4 Calcolo giorno della settimana">
+                        <span class="ex-num">es. 4</span>
+                        <a class="ex-title" href="../frontend/javascript/lezioni/GiornoDellaSettimana/index.html">Calcolo giorno della settimana</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/GiornoDellaSettimana/index.html" aria-label="Codice sorgente su GitHub: Calcolo giorno della settimana">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 5 Calcolo giorno dell&#x27;anno">
+                        <span class="ex-num">es. 5</span>
+                        <a class="ex-title" href="../frontend/javascript/lezioni/GiornoDellAnno/index.html">Calcolo giorno dell&#x27;anno</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/GiornoDellAnno/index.html" aria-label="Codice sorgente su GitHub: Calcolo giorno dell&#x27;anno">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 6 Calcolo successione di Fibonacci">
+                        <span class="ex-num">es. 6</span>
+                        <a class="ex-title" href="../frontend/javascript/lezioni/Fibonacci/index.html">Calcolo successione di Fibonacci</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/Fibonacci/index.html" aria-label="Codice sorgente su GitHub: Calcolo successione di Fibonacci">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 7 Calcolo del fattoriale">
+                        <span class="ex-num">es. 7</span>
+                        <a class="ex-title" href="../frontend/javascript/lezioni/Fattoriale/index.html">Calcolo del fattoriale</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/Fattoriale/index.html" aria-label="Codice sorgente su GitHub: Calcolo del fattoriale">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 8 Semaforo random">
+                        <span class="ex-num">es. 8</span>
+                        <a class="ex-title" href="../frontend/javascript/esercizi/Semaforo/index.html">Semaforo random</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/esercizi/Semaforo/index.html" aria-label="Codice sorgente su GitHub: Semaforo random">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 9 Somma con doppio bottone">
+                        <span class="ex-num">es. 9</span>
+                        <a class="ex-title" href="../frontend/javascript/esercizi/SommaDoppioBottone/index.html">Somma con doppio bottone</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/esercizi/SommaDoppioBottone/index.html" aria-label="Codice sorgente su GitHub: Somma con doppio bottone">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 10 Nodi del DOM">
+                        <span class="ex-num">es. 10</span>
+                        <a class="ex-title" href="../frontend/javascript/lezioni/NodiDOM/index.html">Nodi del DOM</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/NodiDOM/index.html" aria-label="Codice sorgente su GitHub: Nodi del DOM">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 11 Selezione immagine al click">
+                        <span class="ex-num">es. 11</span>
+                        <a class="ex-title" href="../frontend/javascript/lezioni/CambioImmagine/index.html">Selezione immagine al click</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/CambioImmagine/index.html" aria-label="Codice sorgente su GitHub: Selezione immagine al click">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 12 Attributo mouse over">
+                        <span class="ex-num">es. 12</span>
+                        <a class="ex-title" href="../frontend/javascript/lezioni/MouseOver/index.html">Attributo mouse over</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/MouseOver/index.html" aria-label="Codice sorgente su GitHub: Attributo mouse over">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 13 Rubrica standard">
+                        <span class="ex-num">es. 13</span>
+                        <a class="ex-title" href="../frontend/javascript/lezioni/RubricaOggetti/index.html">Rubrica standard</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/RubricaOggetti/index.html" aria-label="Codice sorgente su GitHub: Rubrica standard">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 14 Rubrica avanzata (solo nel codice, stesso funzionamento)">
+                        <span class="ex-num">es. 14</span>
+                        <a class="ex-title" href="../frontend/javascript/esercizi/RubricaAvanzata/index.html">Rubrica avanzata (solo nel codice, stesso funzionamento)</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/esercizi/RubricaAvanzata/index.html" aria-label="Codice sorgente su GitHub: Rubrica avanzata (solo nel codice, stesso funzionamento)">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 15 Timer (conto alla rovescia)">
+                        <span class="ex-num">es. 15</span>
+                        <a class="ex-title" href="../frontend/javascript/lezioni/Intervalli/index.html">Timer (conto alla rovescia)</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/lezioni/Intervalli/index.html" aria-label="Codice sorgente su GitHub: Timer (conto alla rovescia)">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 16 Mouse over tra due immagini">
+                        <span class="ex-num">es. 16</span>
+                        <a class="ex-title" href="../frontend/javascript/esercizi/NewMouseOver/index.html">Mouse over tra due immagini</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/esercizi/NewMouseOver/index.html" aria-label="Codice sorgente su GitHub: Mouse over tra due immagini">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 17 Tabella avanzata creata dal JavaScript">
+                        <span class="ex-num">es. 17</span>
+                        <a class="ex-title" href="../frontend/javascript/esercizi/CreazioneTabella/index.html">Tabella avanzata creata dal JavaScript</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/esercizi/CreazioneTabella/index.html" aria-label="Codice sorgente su GitHub: Tabella avanzata creata dal JavaScript">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                    <li class="exercise" data-search="es. 18 Tabella avanzata con easter egg">
+                        <span class="ex-num">es. 18</span>
+                        <a class="ex-title" href="../frontend/javascript/esercizi/TabellaConBottone/index.html">Tabella avanzata con easter egg</a>
+                        <a class="ex-code" href="https://github.com/matteeoderosa/ITSProdigi/blob/main/frontend/javascript/esercizi/TabellaConBottone/index.html" aria-label="Codice sorgente su GitHub: Tabella avanzata con easter egg">Codice <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <span>&copy; 2026 Matteo De Rosa</span>
+            <a href="https://github.com/matteeoderosa/ITSProdigi">Codice di questo sito su GitHub</a>
+        </div>
+    </footer>
+</body>
 </html>
