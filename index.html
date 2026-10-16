@@ -1,79 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="pagina main del sito di Matteo">
-    <title>ITS Prodigi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./pages/css/fonts.css">
-    <link rel="stylesheet" href="./pages/css/index.css">
-    <link rel="stylesheet" href="./pages/css/nav-icons.css">
+    <title>Matteo De Rosa · Progetti ed esercizi full stack</title>
+    <meta name="description" content="Il sito di Matteo De Rosa: progetti web (Laravel, React, Node.js) ed esercizi di HTML, CSS e JavaScript del percorso ITS Prodigi.">
+    <link rel="canonical" href="https://matteeoderosa.it/">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#151311" media="(prefers-color-scheme: dark)">
 
-    <link rel="icon" href="./pages/img/img/favicon.ico" />
-    <link rel="icon" href="./pages/img/img/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="Matteo De Rosa">
+    <meta property="og:title" content="Matteo De Rosa · Progetti ed esercizi full stack">
+    <meta property="og:description" content="Il sito di Matteo De Rosa: progetti web (Laravel, React, Node.js) ed esercizi di HTML, CSS e JavaScript del percorso ITS Prodigi.">
+    <meta property="og:url" content="https://matteeoderosa.it/">
+    <meta property="og:image" content="https://matteeoderosa.it/pages/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Matteo De Rosa, progetti ed esercizi full stack">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- <link rel="icon" href="./pages/img/MLogo.ico" type="image/x-icon"> -->
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="preload" href="pages/fonts/instrument-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="pages/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="pages/css/fonts.css">
+    <link rel="stylesheet" href="pages/css/site.css">
+    <script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+    <script src="pages/js/theme.js" defer></script>
 </head>
 <body>
-    <nav class="nav-icons">
-        <a href="https://matteeoderosa.it" aria-label="torna alla home page"><img src="./pages/img/casetta.png" alt="logo home page"></a>
-        <a href="./pages/navigation.html" aria-label="torna alla pagina di navigazione"><img src="./pages/img/arrow.png" alt="logo freccia per tornare alla pagina di navigazione"></a>
-    </nav>
+    <a class="skip-link" href="#contenuto">Vai al contenuto</a>
 
-    <main>
-        <div id="boxColorato">
-
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="./">
+                <img src="favicon.svg" alt="" width="34" height="34">
+                <span>Matteo De Rosa</span>
+            </a>
+            <nav class="main-nav" aria-label="Principale">
+                <ul>
+                    <li><a href="#progetti">Progetti</a></li>
+                    <li><a href="pages/navigation.html">Esercizi</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Tema scuro">
+                <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
         </div>
+    </header>
 
-        <div class="title">
-            <h1>Sito di <mark>Matteo De Rosa</mark></h1>
-        </div>
+    <main id="contenuto">
+        <div class="wrap">
+            <section class="hero" aria-labelledby="titolo">
+                <h1 id="titolo">Matteo De Rosa</h1>
+                <p class="lead">Progetti ed esercizi del mio percorso da sviluppatore full stack.</p>
+                <!-- Qui si può aggiungere una breve presentazione personale -->
+            </section>
 
-
-        <div class="supercontainer">
-            <a href="./pages/navigation.html">
-                <div class="container" id="esercizi-frontend">
-                    <p>esercizi di frontend puro</p>
+            <section class="section" id="progetti" aria-labelledby="titolo-progetti">
+                <div class="section-head">
+                    <h2 id="titolo-progetti">Progetti</h2>
                 </div>
-            </a>
+                <ul class="cards">
+                <li class="card">
+                    <h3><a class="card-link" href="https://todo.matteeoderosa.it">To-Do List</a></h3>
+                    <svg class="card-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    <p>Lista di attività con login: crea liste e note e segna cosa è fatto. API Laravel, interfaccia React.</p>
+                    <ul class="tags" aria-label="Tecnologie">
+                            <li>Laravel</li>
+                            <li>React</li>
+                            <li>Docker</li>
+                    </ul>
+                </li>
+                <li class="card">
+                    <h3><a class="card-link" href="https://tabella.matteeoderosa.it">Utenti, post e commenti</a></h3>
+                    <svg class="card-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    <p>Dashboard per gestire utenti, post e commenti, con modifica direttamente nelle tabelle.</p>
+                    <ul class="tags" aria-label="Tecnologie">
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>MySQL</li>
+                    </ul>
+                </li>
+                <li class="card">
+                    <h3><a class="card-link" href="https://poke.matteeoderosa.it">Pokémon con PokéAPI</a></h3>
+                    <svg class="card-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    <p>Esplora i Pokémon usando i dati di PokéAPI.</p>
+                    <ul class="tags" aria-label="Tecnologie">
+                            <li>React</li>
+                            <li>API REST</li>
+                    </ul>
+                </li>
+                <li class="card">
+                    <h3><a class="card-link" href="https://stats.matteeoderosa.it">GitHub Stats</a></h3>
+                    <svg class="card-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    <p>Le statistiche di un profilo GitHub in una dashboard.</p>
+                    <ul class="tags" aria-label="Tecnologie">
+                            <li>React</li>
+                            <li>GitHub API</li>
+                    </ul>
+                </li>
+                <li class="card">
+                    <h3><a class="card-link" href="https://derteo.github.io">Sito personale</a></h3>
+                    <svg class="card-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    <p>Il mio sito personale, pubblicato con GitHub Pages.</p>
+                    <ul class="tags" aria-label="Tecnologie">
+                            <li>GitHub Pages</li>
+                    </ul>
+                </li>
+                </ul>
+            </section>
 
-            <a href="https://derteo.github.io">
-                <div class="container" id="derteoGithub">
-                    <p>visita il mio nuovo sito personale</p>
+            <section class="section" id="esercizi" aria-labelledby="titolo-esercizi">
+                <div class="section-head">
+                    <h2 id="titolo-esercizi">Esercizi del corso</h2>
                 </div>
-            </a>
-
-            <a href="https://todo.matteeoderosa.it">
-                <div class="container" id="sitoTodo">
-                    <p>To-Do List in Laravel</p>
-                </div>
-            </a>
-
-            <a href="https://tabella.matteeoderosa.it">
-                <div class="container" id="sitoTabella">
-                    <p>sito users-posts-comments</p>
-                </div>
-            </a>
-
-            <a href="https://poke.matteeoderosa.it">
-                <div class="container" id="poke">
-                    <p>progetto React basato su PokèApi</p>
-                </div>
-            </a>
-
-            <a href="https://stats.matteeoderosa.it">
-                <div class="container" id="stats">
-                    <p>progetto React sulle GitHub Stats</p>
-                </div>
-            </a>
+                <ul class="cards">
+                <li class="card">
+                    <h3><a class="card-link" href="pages/navigation.html">Esercizi di frontend</a></h3>
+                    <svg class="card-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    <p>26 esercizi di HTML, CSS e JavaScript puro, ognuno con il codice sorgente.</p>
+                    <ul class="tags" aria-label="Tecnologie">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                    </ul>
+                </li>
+                </ul>
+            </section>
         </div>
     </main>
 
-    <footer>
-
-        &copy; Matteo De Rosa - 2026
-
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <span>&copy; 2026 Matteo De Rosa</span>
+            <a href="https://github.com/matteeoderosa/ITSProdigi">Codice di questo sito su GitHub</a>
+        </div>
     </footer>
 </body>
 </html>
